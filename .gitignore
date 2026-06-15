@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+*.log
+
+# Ignore build output (not webpack config files)
+dist/
+webpack-ts-app/build/dist/
+webpack-ts-app/build/node_modules/
+
+# But commit webpack config files
+!webpack-ts-app/build/*.conf.js
+
+# Assets and components
+webpack-ts-app/src/assets/
+webpack-ts-app/src/components/
