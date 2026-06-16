@@ -6,9 +6,9 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-
-const message = ref("Hello Vue 3!");
+import { request_axios } from "../../request/request_axios";
+request_axios("/api/index.action", { method: "get" });
+const message = ref("");
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
